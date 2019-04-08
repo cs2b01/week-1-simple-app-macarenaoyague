@@ -8,17 +8,17 @@
       var User=document.getElementById("text");
       var Password=document.getElementById("password");
       var Alerta= "";
-      if (User!=Password)
+	    if (User!=Password){
         Alerta="Oh snap! Invalid Password or username";
-      document.write(Alerta);
+	      alert(Alerta)}   
     }
-    window.onload=loggin;
+ 
   </script>
 </head>
 
 <body>
-  <input type="text" value="Username"> </input>
-  <input type="password" value="Password"> </input>
+  <input id="text" type="text" value="Username"> </input>
+  <input id="password" type="password" value="Password"> </input>
   <input type="submit" value="Submit" onclick=loggin()> </input>
 </body>
 
