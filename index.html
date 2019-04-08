@@ -2,11 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title of the document</title>
+<title>MyCHAT</title>
+  <script>
+    function loggin(){
+      var User=document.getElementById("text");
+      var Password=document.getElementById("password");
+      var Submit=document.getElementByID("submit");
+      var Alerta= "";
+      if (User!=Password)
+        Alerta="Oh snap! Invalid Password or username";
+      document.write(Alerta);
+    }
+    window.onload=loggin;
+  </script>
 </head>
 
 <body>
-Content of the document......
+  <input type="text" value="Username"> </input>
+  <input type="password" value="Password"> </input>
+  <input type="submit" value="Submit" onclick=loggin()> </input>
 </body>
 
 </html>
